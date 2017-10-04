@@ -1,0 +1,414 @@
+#EXTINF:0 tvg-id="TVP 1" ,TVP 1 HD
+/1:0:1:3ABD:514:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVP 2" ,TVP 2 HD
+/1:0:1:C22:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat" ,Polsat HD
+/1:0:1:33A1:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVN" ,TVN HD
+/1:0:1:3DCD:640:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2345" ,TV 4 HD
+/1:0:1:3393:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="TTV" ,TTV HD
+/1:0:1:3DD7:640:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TV Puls" ,TV Puls HD
+/1:0:1:3D66:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVN 7" ,TVN 7 HD
+/1:0:1:3DD3:640:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Nowa TV" ,Nowa TV
+/1:0:16:10E5:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="METRO" ,Metro
+/1:0:1:4287:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="ZOOM TV" , ZOOM TV
+/1:0:1:4291:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="WP1" ,WP 1
+/1:0:16:10E5:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="CANAL+" ,Canal+ HD
+/1:0:1:32DC:190:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3180" ,Canal+1 HD
+/1:0:1:13ED:5DC:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3181" ,Canal+ Film HD
+/1:0:1:3779:44C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="CANAL+ Family" ,Canal+ Family HD
+/1:0:19:377B:44C:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3182" ,Canal+ Seriale HD
+/1:0:19:3782:44C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="HBO" ,HBO HD
+/1:0:19:290E:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="HBO2" ,HBO2 HD
+/1:0:19:DD7:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="HBO3" ,HBO3 HD
+/1:0:19:DD8:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Cinemax" ,Cinemax HD
+/1:0:19:3B67:12C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Cinemax 2" ,Cinemax 2 HD
+/1:0:1:C26:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="Filmbox" ,Filmbox
+/1:0:1:3D61:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Filmbox Extra HD" ,Filmbox Extra HD
+/1:0:1:32E1:190:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Filmbox Family" ,Filmbox Family
+/1:0:1:3D62:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="FilmBox Premium" ,Filmbox Premium
+/1:0:1:3D60:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="FilmBox Action" ,Filmbox Action
+/1:0:1:3D65:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="FilmBox Arthouse" , Filmbox Arthouse
+/1:0:1:428A:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="FOX" ,Fox HD
+/1:0:1:C27:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="FOX Comedy" ,Fox Comedy HD
+/1:0:1:C1F:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="AXN" ,AXN HD
+/1:0:1:C25:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="AXN Spin" ,AXN Spin HD
+/1:0:1:3D5D:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="AXN White" ,AXN White
+/1:0:1:1C86:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="AXN Black" ,AXN Black
+/1:0:1:1C87:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="SciFi Universal" ,Scifi Universal
+/1:0:1:3E2E:2EE0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Ale kino+" ,Ale kino+ HD
+/1:0:19:3781:44C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="AMC" ,AMC HD
+/1:0:1:3AB7:514:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TNT" ,TNT HD
+/1:0:1:2905:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="Paramount Channel" ,Paramount Channel HD
+/1:0:1:D:3200:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2428" ,CBS Europa HD
+/1:0:1:290B:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="CBS Action" ,CBS Action
+/1:0:1:4282:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="CBS REALITY" ,CBS Reality
+/1:0:1:3D5B:2C88:13E:820000:0:0:0
+#EXTINF:0,PPV
+/1:0:1:C30:1E78:71:820000:0:0:0
+#EXTINF:0,KSW39
+/1:0:1:3E30:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CBS Drama" tvg-logo="" group-title="FILMOWE",CBS Drama
+/1:0:16:3D5A:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Comedy Central" ,Comedy Central HD
+/1:0:1:C:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Comedy Central Family" ,Comedy Central Family
+/1:0:1:4:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Kino Polska" ,Kino Polska
+/1:0:1:1135:2AF8:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2338" ,Stopklatka TV
+/1:0:1:427B:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="13 Ulica" ,13 Ulica HD
+/1:0:1:3E26:2EE0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="187" ,Universal Channel HD 
+/1:0:1:3E20:2EE0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVN Fabula" ,TVN Fabuła HD
+/1:0:1:3DD6:640:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Film" ,Polsat Film HD
+/1:0:1:3398:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Play" ,Polsat Play HD
+/1:0:1:3392:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVP HD" ,TVP HD
+/1:0:1:3B62:12C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Seriale" ,TVP Seriale
+/1:0:1:3D5C:2C88:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2054" ,Sundance HD
+/1:0:1:3E1D:2EE0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Romans" ,Polsat Romans
+/1:0:1:1C85:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="Romance TV HD" ,Romance TV HD
+/1:0:1:3ABE:514:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Novela TV" ,Novela TV
+/1:0:16:4240:3DB8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="CANAL+ Sport" ,Canal+ Sport HD
+/1:0:1:32DE:190:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3193" ,Canal+ Sport 2 HD
+/1:0:1:3B6A:12C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="nSport" ,nSport HD
+/1:0:1:3AB9:514:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3194" ,Eleven HD
+/1:0:1:13F3:5DC:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3196" ,Eleven Sports HD
+/1:0:1:13F5:5DC:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3195" ,Eleven Extra HD
+/1:0:1:13F8:5DC:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Sport" ,Polsat Sport HD
+/1:0:1:C1D:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Sport Extra" ,Polsat Sport Extra HD
+/1:0:1:C24:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="POLSAT Sport 2" ,Polsat Sport Fight HD
+/1:0:16:2911:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Sport News" ,Polsat Sport News HD
+/1:0:1:2913:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Sport" ,TVP Sport HD
+/1:0:19:DB1:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Eurosport" ,Eurosport HD
+/1:0:1:3E25:2EE0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Eurosport 2" ,Eurosport 2 HD
+/1:0:1:290C:1EDC:71:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1564" ,Sport Klub
+/1:0:16:DC0:2D50:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3199" ,Fight Klub HD
+/1:0:1:13F1:5DC:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2808" ,Fightbox HD
+/1:0:1:3E24:2EE0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1389" ,Golf Channel Polska
+/1:0:1:3E23:2EE0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="156" ,Extreme Sports HD
+/1:0:19:290A:1EDC:71:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3183" ,Canal+ Discovery HD
+/1:0:1:3A99:514:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Discovery Channel" ,Discovery Channel HD
+/1:0:19:3AB8:514:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Discovery Historia" ,Discovery Historia
+/1:0:16:DB2:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Discovery Life" ,Discovery Life
+/1:0:16:3D56:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Discovery Science" ,Discovery Science HD
+/1:0:19:290D:1EDC:71:820000:0:0:0
+#EXTINF:0 type="stream" channelId="60" ,Discovery Turbo Xtra HD
+/1:0:19:3A9C:514:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="59" tvg-logo="http://sharejunior.c0.pl/ico/ID_HD_1.png" group-title="",ID HD
+/1:0:19:3A9B:514:13E:820000:0:0:0
+#EXTINF:0 tvg-id="National Geographic Channel" ,National Geographic Channel HD
+/1:0:19:32DF:190:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Nat Geo People" ,Nat Geo People HD
+/1:0:19:2907:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="Nat Geo Wild" ,Nat Geo Wild HD
+/1:0:1:3B65:12C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="HISTORY" ,History HD
+/1:0:1:C2F:1E78:71:820000:0:0:0
+#EXTINF:0 tvg-id="H2" ,H2 HD
+/1:0:19:3E22:2EE0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Adventure",Adventure HD
+/1:0:19:10E9:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Animal Planet",Animal Planet HD
+/1:0:1:3B66:12C:13E:820000:0:0:0
+#EXTINF:0 tvg-id="POLSAT Viasat Nature" ,Polsat Viasat Nature 
+/1:0:1:1CCD:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="POLSAT Viasat Explore" ,Polsat Viasat Explore HD 
+/1:0:1:1CCA:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="POLSAT Viasat History" ,Polsat Viasat History HD
+/1:0:1:C20:1E78:71:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://s19.postimg.org/7l6088lg3/polsat_crime.png"   , CI Polsat
+/1:0:1:1C9C:332C:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3191" ,Planete+ HD
+/1:0:19:377E:44C:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1200" ,Lifetime HD
+/1:0:1:3E27:2EE0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2397" , Kuchnia+ HD
+/1:0:19:377F:44C:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2400" ,Domo+ HD
+/1:0:1:13EF:5DC:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TLC" ,TLC HD
+/1:0:1:3E21:2EE0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1145" ,BBC Earth HD
+/1:0:19:E08:2D50:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1145" ,BBC Lifestyle HD
+/1:0:1:7DB:22C4:13E:820000:0:0:0
+#EXTINF:0 tvg-id="BBC" ,BBC HD
+/1:0:19:DD4:2D50:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2407"  , BBC Brit HD
+/1:0:19:7D6:22C4:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Water Planet" ,Water Planet
+/1:0:16:423E:3DB8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVN Turbo" ,TVN Turbo HD
+/1:0:1:3DD0:640:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Motowizja HD" ,Motowizja
+/1:0:1:DB4:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVN Style" ,TVN Style HD
+/1:0:1:3DCE:640:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2378" ,Polsat Cafe HD
+/1:0:1:3396:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat Food Network" ,Food Network HD
+/1:0:19:3DD9:640:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3179" ,Wellbeing Network HD
+/1:0:1:4277:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Fokus TV" ,Fokus TV
+/1:0:1:10E1:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Travel Channel" ,Travel Channel HD
+/1:0:19:3DD8:640:13E:820000:0:0:0
+#EXTINF:0 tvg-id="E! Entertainment" ,E!
+/1:0:1:427F:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Historia" ,TVP Historia
+/1:0:1:DC4:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Kultura" ,TVP Kultura
+/1:0:1:3D59:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Rozrywka" ,TVP Rozrywka
+/1:0:1:4288:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://satkurier.pl/uploads/26705.jpg" program=16994 , Active Family
+/1:0:1:10DD:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TBN Polska" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/TBN%20POLSKA.png" ,TBN Polska
+/1:0:1:35EF:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1418" ,HGTV HD
+/1:0:1:10DE:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat News" ,Polsat News HD
+/1:0:1:3399:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat News 2" ,Polsat News 2
+/1:0:16:3333:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVN 24" ,TVN 24 HD
+/1:0:1:3DD2:640:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2385" ,TVN 24 Biznes i Swiat HD
+/1:0:19:10EA:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Superstacja" ,Superstacja
+/1:0:16:1CBE:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Info" ,TVP Info
+/1:0:1:113A:2AF8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Cartoon Network" ,Cartoon Network HD
+/1:0:1:2906:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="Boomerang",Boomerang
+/1:0:16:1CB8:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="Disney Channel" ,Disney Channel HD
+/1:0:1:1CB6:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="Disney Junior",Disney Junior
+/1:0:16:2938:1EDC:71:820000:0:0:0
+#EXTINF:0 tvg-id="Disney XD" ,Disney XD
+/1:0:16:1CB5:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="MiniMini+" ,MiniMini+ HD
+/1:0:19:32FE:190:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Nick Jr." ,Nick Jr
+/1:0:1:6:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Nickelodeon HD" ,Nickelodeon HD
+/1:0:1:E:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Nickelodeon" ,Nickelodeon
+/1:0:1:B:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Teletoon" ,Teletoon+ HD
+/1:0:19:379B:44C:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3261" ,JimJam Polsat
+/1:0:1:1CB7:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVP ABC" ,TVP ABC
+/1:0:1:DB5:2D50:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Da Vinci Learning" ,Da Vinci Learning
+/1:0:1:4280:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1253" ,BBC CBeebies
+/1:0:1:7D9:22C4:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Baby TV" ,Baby TV
+/1:0:1:579:2DB4:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Polsat 2" ,Polsat 2 HD
+/1:0:1:339A:3390:71:820000:0:0:0
+#EXTINF:0 tvg-id="TVP Polonia" ,TVP Polonia
+/1:0:1:132B:33F4:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVP 3" ,TVP 3
+/1:0:1:113B:2AF8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Tele 5" ,Tele 5
+/1:0:1:423B:3DB8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Polonia 1" ,Polonia 1
+/1:0:1:423C:3DB8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="PULS 2" ,Puls 2
+/1:0:16:10E3:3E8:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2349" ,TV 6
+/1:0:1:1CBD:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="NTL Radomsko" ,NTL
+/1:0:16:10E4:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TVS" ,TVS
+/1:0:1:3D58:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="ATM Rozrywka" ,ATM Rozrywka
+/1:0:1:1CBA:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="Super Polsat" ,Super Polsat
+/1:0:16:1CC0:1CE8:71:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://ncplusgo.img.rd.insyscd.net/ch-mtv-polska/ch-mtv-polska-309.png" ,MTV Polska
+/1:0:1:2:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="MTV Live HD" ,MTV Live HD
+/1:0:19:1:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="MTV Rocks" ,MTV Rocks
+/1:0:1:1CB9:1CE8:71:820000:0:0:0
+#EXTINF:0 type="stream" channelId="984"   , VIVA POLSKA
+/1:0:1:5:3200:13E:820000:0:0:0
+#EXTINF:0 tvg-id="4fun TV" ,4Fun TV
+/1:0:1:428D:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3200" , 4Fun Fit and Dance
+/1:0:1:428F:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="4FUN HITS" , 4FUN HITS
+/1:0:1:428E:2BC0:13E:820000:0:0:0
+#EXTINF:0 tvg-id="8TV" ,8 TV
+/1:0:1:10DB:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="Muzo TV" ,Muzo TV
+/1:0:1:4279:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2430"   , Kino Polska Muzyka
+/1:0:1:DAE:2D50:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2343"   , Polo TV
+/1:0:1:10DA:3E8:13E:820000:0:0:0
+#EXTINF:0 tvg-id="POWER TV" ,POWER TV
+/1:0:16:10E7:3E8:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1654"   , VOX Music TV
+/1:0:1:3D57:2C88:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2368" ,Disco Polo Music
+/1:0:1:1C8C:1CE8:71:820000:0:0:0
+#EXTINF:0 tvg-id="Hip Hop TV" ,HIP HOP TV
+/1:0:1:3D63:2C88:13E:820000:0:0:0
+#EXTINF:0 tvg-id="TRACE TV" ,TRACE TV
+/1:0:1:DB6:2D50:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="151"   , VH1
+/1:0:1:7:3200:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://ncplusgo.img.rd.insyscd.net/ch-zest-tv/ch-zest-tv-299.png" ,Zest TV
+/1:0:1:DB3:2D50:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="683" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/redlight%20hd.jpg" , Redlight HD
+/1:0:1:4224:3DB8:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="763" , SCT HQ
+/1:0:1:35C3:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="2153" ,Dorcel TV HD
+/1:0:1:4205:2F44:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="519" ,Hustler HD
+/1:0:1:4225:3DB8:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/tgirls.jpg" , TGIRLS TV
+/1:0:1:35C0:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/VIVID%20TOUCH.png" , VIVID TOUCH
+/1:0:1:4228:3DB8:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1222" , Penthouse TV
+/1:0:19:26B3:43E:1:C00000:0:0:0
+#EXTINF:0 type="stream" channelId="2846" , PRIVATE TV
+/1:0:1:1360:33F4:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="275" ,XXL PL
+/1:0:1:1D5:26AC:13F:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://satkurier.pl/uploads/32155.png" , EvilAngel TV
+/1:0:1:35C0:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1906" , CENTOXCENTO TV
+/1:0:1:35C6:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/sesto%20sento.jpg" , SESTO SENSO TV
+/1:0:1:35C7:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1904" , Exotica TV
+/1:0:1:35C1:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="1905" , Pink O TV
+/1:0:1:35D8:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="3005" , Passion XXX
+/1:0:1:35C8:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="518"  , Brazzers TV
+/1:0:1:1D25:2FA8:13E:820000:0:0:0
+#EXTINF:0 type="stream" channelId="98" ,ZDF
+/1:0:1:1F4B:319C:13E:820000:0:0:0 
+#EXTINF:0 type="stream" channelId="113" , ART HD
+/1:0:1:133:3E1C:13F:820000:0:0:0
+#EXTINF:0 type="stream" channelId="94" ,Das Erste HD
+/1:0:1:E26:708:C8:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/LIVECHANNEL.jpg" , LIVECHANNEL
+/1:0:1:35C9:1388:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD TEST
+/1:0:1:4285:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 201
+/1:0:1:427C:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 202
+/1:0:1:4269:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 203
+/1:0:1:426A:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 204
+/1:0:1:426B:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 205
+/1:0:1:426C:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 206
+/1:0:1:426D:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 207
+/1:0:1:426E:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 208
+/1:0:1:426F:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 209
+/1:0:1:4270:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 211
+/1:0:1:4272:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 212
+/1:0:1:4273:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 213
+/1:0:1:4274:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , VOD 214
+/1:0:1:4275:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , xxxVOD1
+/1:0:1:427D:2BC0:13E:820000:0:0:0
+#EXTINF:0 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" , xxxVOD2
+/1:0:1:427E:2BC0:13E:820000:0:0:0

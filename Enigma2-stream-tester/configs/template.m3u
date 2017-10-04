@@ -1,0 +1,487 @@
+#EXTM3U x-tvg-url="http://epg.evai.pl/epg/epg.xml"
+#EXTVLCOPT--http-reconnect=true
+
+#OGÓLNE
+
+#EXTINF:-1 tvg-id="TVP 1" tvg-logo="" group-title="OGÓLNE",TVP 1 HD
+http://127.0.0.1:8001/1:0:1:3ABD:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP 2" tvg-logo="" group-title="OGÓLNE",TVP 2 HD
+http://127.0.0.1:8001/1:0:1:C22:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat" tvg-logo="" group-title="OGÓLNE",Polsat HD
+http://127.0.0.1:8001/1:0:1:33A1:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN" tvg-logo="" group-title="OGÓLNE",TVN HD
+http://127.0.0.1:8001/1:0:1:3DCD:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN" tvg-logo="" group-title="OGÓLNE",TVN
+http://127.0.0.1:8001/1:0:1:10D7:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TV 4" tvg-logo="" group-title="OGÓLNE",TV 4 HD
+http://127.0.0.1:8001/1:0:1:3393:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TV 4" tvg-logo="" group-title="OGÓLNE",TV 4
+http://127.0.0.1:8001/1:0:1:332F:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TTV" tvg-logo="" group-title="OGÓLNE",TTV HD
+http://127.0.0.1:8001/1:0:1:3DD7:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TV Puls" tvg-logo="" group-title="OGÓLNE",TV Puls HD
+http://127.0.0.1:8001/1:0:1:3D66:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TV Puls" tvg-logo="" group-title="OGÓLNE",TV Puls
+http://127.0.0.1:8001/1:0:1:113C:2AF8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN 7" tvg-logo="" group-title="OGÓLNE",TVN 7 HD
+http://127.0.0.1:8001/1:0:1:3DD3:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN 7" tvg-logo="" group-title="OGÓLNE",TVN 7
+http://127.0.0.1:8001/1:0:1:10D9:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Nowa TV" tvg-logo="" group-title="OGÓLNE",Nowa TV
+http://127.0.0.1:8001/1:0:16:10E5:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="METRO" tvg-logo="" group-title="OGÓLNE",Metro
+http://127.0.0.1:8001/1:0:1:4287:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="ZOOM TV" tvg-logo="" group-title="OGÓLNE",ZOOM TV
+http://127.0.0.1:8001/1:0:1:4291:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="WP1" tvg-logo="" group-title="OGÓLNE",WP 1
+http://127.0.0.1:8001/1:0:16:10E5:3E8:13E:820000:0:0:0
+
+#FILMOWE
+
+#EXTINF:-1 tvg-id="CANAL+" tvg-logo="" group-title="FILMOWE",Canal+ HD
+http://127.0.0.1:8001/1:0:1:32DC:190:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CANAL+1" tvg-logo="" group-title="FILMOWE",Canal+1 HD
+http://127.0.0.1:8001/1:0:1:13ED:5DC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CANAL+ Film" tvg-logo="" group-title="FILMOWE",Canal+ Film HD
+http://127.0.0.1:8001/1:0:1:3779:44C:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CANAL+ Family" tvg-logo="" group-title="FILMOWE",Canal+ Family HD
+http://127.0.0.1:8001/1:0:19:377B:44C:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CANAL+ Seriale" tvg-logo="" group-title="FILMOWE",Canal+ Seriale HD
+http://127.0.0.1:8001/1:0:19:3782:44C:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="HBO" tvg-logo="" group-title="FILMOWE",HBO HD
+http://127.0.0.1:8001/1:0:19:290E:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="HBO2" tvg-logo="" group-title="FILMOWE",HBO2 HD
+http://127.0.0.1:8001/1:0:19:DD7:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="HBO3" tvg-logo="" group-title="FILMOWE",HBO3 HD
+http://127.0.0.1:8001/1:0:19:DD8:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Cinemax" tvg-logo="" group-title="FILMOWE",Cinemax HD
+http://127.0.0.1:8001/1:0:19:3B67:12C:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Cinemax 2" tvg-logo="" group-title="FILMOWE",Cinemax 2 HD
+http://127.0.0.1:8001/1:0:1:C26:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Filmbox" tvg-logo="" group-title="FILMOWE",Filmbox
+http://127.0.0.1:8001/1:0:1:3D61:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Filmbox Extra HD" tvg-logo="" group-title="FILMOWE",Filmbox Extra HD
+http://127.0.0.1:8001/1:0:1:32E1:190:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Filmbox Family" tvg-logo="" group-title="FILMOWE",Filmbox Family
+http://127.0.0.1:8001/1:0:1:3D62:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="FilmBox Premium" tvg-logo="" group-title="FILMOWE",Filmbox Premium
+http://127.0.0.1:8001/1:0:1:3D60:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="FilmBox Action" tvg-logo="" group-title="FILMOWE",Filmbox Action
+http://127.0.0.1:8001/1:0:1:3D65:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="FilmBox Arthouse" tvg-logo="" group-title="FILMOWE",Filmbox Arthouse
+http://127.0.0.1:8001/1:0:1:428A:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="FOX" tvg-logo="" group-title="FILMOWE",Fox HD
+http://127.0.0.1:8001/1:0:1:C27:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="FOX" tvg-logo="" group-title="FILMOWE",Fox
+http://127.0.0.1:8001/1:0:1:13F4:5DC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="FOX Comedy" tvg-logo="" group-title="FILMOWE",Fox Comedy HD
+http://127.0.0.1:8001/1:0:1:C1F:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="FOX Comedy" tvg-logo="" group-title="FILMOWE",Fox Comedy
+http://127.0.0.1:8001/1:0:1:1CCF:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="AXN" tvg-logo="" group-title="FILMOWE",AXN HD
+http://127.0.0.1:8001/1:0:1:C25:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="AXN" tvg-logo="" group-title="FILMOWE",AXN
+http://127.0.0.1:8001/1:0:1:1C96:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="AXN Spin" tvg-logo="" group-title="FILMOWE",AXN Spin HD
+http://127.0.0.1:8001/1:0:1:3D5D:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="AXN White" tvg-logo="" group-title="FILMOWE",AXN White
+http://127.0.0.1:8001/1:0:1:1C86:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="AXN Black" tvg-logo="" group-title="FILMOWE",AXN Black
+http://127.0.0.1:8001/1:0:1:1C87:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="SciFi Universal" tvg-logo="" group-title="FILMOWE",Scifi Universal
+http://127.0.0.1:8001/1:0:1:3E2E:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Ale kino+" tvg-logo="" group-title="FILMOWE",Ale kino+ HD
+http://127.0.0.1:8001/1:0:19:3781:44C:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="AMC" tvg-logo="" group-title="FILMOWE",AMC HD
+http://127.0.0.1:8001/1:0:1:3AB7:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TNT" tvg-logo="" group-title="FILMOWE",TNT HD
+http://127.0.0.1:8001/1:0:1:2905:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TNT" tvg-logo="" group-title="FILMOWE",TNT
+http://127.0.0.1:8001/1:0:1:1CBF:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Paramount Channel" tvg-logo="" group-title="FILMOWE",Paramount Channel HD
+http://127.0.0.1:8001/1:0:1:D:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CBS Europa" tvg-logo="" group-title="FILMOWE",CBS Europa HD
+http://127.0.0.1:8001/1:0:1:290B:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="CBS Action" tvg-logo="" group-title="FILMOWE",CBS Action
+http://127.0.0.1:8001/1:0:1:4282:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CBS REALITY" tvg-logo="" group-title="FILMOWE",CBS Reality
+http://127.0.0.1:8001/1:0:1:3D5B:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CBS Drama" tvg-logo="" group-title="FILMOWE",CBS Drama
+http://127.0.0.1:8001/1:0:16:3D5A:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Comedy Central" tvg-logo="" group-title="FILMOWE",Comedy Central HD
+http://127.0.0.1:8001/1:0:1:C:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Comedy Central Family" tvg-logo="" group-title="FILMOWE",Comedy Central Family
+http://127.0.0.1:8001/1:0:1:4:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Kino Polska" tvg-logo="" group-title="FILMOWE",Kino Polska
+http://127.0.0.1:8001/1:0:1:1135:2AF8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2338" tvg-logo="" group-title="FILMOWE",Stopklatka TV
+http://127.0.0.1:8001/1:0:1:427B:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="13 Ulica" tvg-logo="" group-title="FILMOWE",13 Ulica HD
+http://127.0.0.1:8001/1:0:1:3E26:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Universal Channel" tvg-logo="" group-title="FILMOWE",Universal Channel HD 
+http://127.0.0.1:8001/1:0:1:3E20:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Universal Channel" tvg-logo="" group-title="FILMOWE",Universal Channel
+http://127.0.0.1:8001/1:0:1:1:2BC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN Fabula" tvg-logo="" group-title="FILMOWE",TVN Fabuła HD
+http://127.0.0.1:8001/1:0:1:3DD6:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Film" tvg-logo="" group-title="FILMOWE",Polsat Film HD
+http://127.0.0.1:8001/1:0:1:3398:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Play" tvg-logo="" group-title="FILMOWE",Polsat Play HD
+http://127.0.0.1:8001/1:0:1:3392:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP HD" tvg-logo="" group-title="FILMOWE",TVP HD
+http://127.0.0.1:8001/1:0:1:3B62:12C:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Seriale" tvg-logo="" group-title="FILMOWE",TVP Seriale
+http://127.0.0.1:8001/1:0:1:3D5C:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Sundance Channel" tvg-logo="" group-title="FILMOWE",Sundance HD
+http://127.0.0.1:8001/1:0:1:3E1D:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Romans" tvg-logo="" group-title="FILMOWE",Polsat Romans
+http://127.0.0.1:8001/1:0:1:1C85:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Romance TV HD" tvg-logo="" group-title="FILMOWE",Romance TV HD
+http://127.0.0.1:8001/1:0:1:3ABE:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Novela TV" tvg-logo="" group-title="FILMOWE",Novela TV
+http://127.0.0.1:8001/1:0:16:4240:3DB8:13E:820000:0:0:0
+
+#SPORTOWE
+
+#EXTINF:-1 tvg-id="CANAL+ Sport" tvg-logo="" group-title="SPORTOWE",Canal+ Sport HD
+http://127.0.0.1:8001/1:0:1:32DE:190:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="CANAL+ Sport 2" tvg-logo="" group-title="SPORTOWE",Canal+ Sport 2 HD
+http://127.0.0.1:8001/1:0:1:1420:5dc:13e:820000:0:0:0
+#EXTINF:-1 tvg-id="nSport" tvg-logo="" group-title="SPORTOWE",nSport HD
+http://127.0.0.1:8001/1:0:1:3AB9:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Eleven" tvg-logo="" group-title="SPORTOWE",Eleven HD
+http://127.0.0.1:8001/1:0:1:13F3:5DC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Eleven Sports" tvg-logo="" group-title="SPORTOWE",Eleven Sports HD
+http://127.0.0.1:8001/1:0:1:13F5:5DC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Eleven Extra" tvg-logo="" group-title="SPORTOWE",Eleven Extra HD
+http://127.0.0.1:8001/1:0:1:13F8:5DC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Sport" tvg-logo="" group-title="SPORTOWE",Polsat Sport HD
+http://127.0.0.1:8001/1:0:1:C1D:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Sport" tvg-logo="" group-title="SPORTOWE",Polsat Sport
+http://127.0.0.1:8001/1:0:16:3330:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Sport Extra" tvg-logo="" group-title="SPORTOWE",Polsat Sport Extra HD
+http://127.0.0.1:8001/1:0:1:C24:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Sport Extra" tvg-logo="" group-title="SPORTOWE",Polsat Sport Extra
+http://127.0.0.1:8001/1:0:16:3331:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="POLSAT Sport 2" tvg-logo="" group-title="SPORTOWE",Polsat Sport Fight HD
+http://127.0.0.1:8001/1:0:16:2911:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Sport News" tvg-logo="" group-title="SPORTOWE",Polsat Sport News HD
+http://127.0.0.1:8001/1:0:1:2913:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Sport" tvg-logo="" group-title="SPORTOWE",TVP Sport HD
+http://127.0.0.1:8001/1:0:19:DB1:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Sport" tvg-logo="" group-title="SPORTOWE",TVP Sport
+http://127.0.0.1:8001/1:0:1:1132:2AF8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Eurosport" tvg-logo="" group-title="SPORTOWE",Eurosport HD
+http://127.0.0.1:8001/1:0:1:3E25:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Eurosport" tvg-logo="" group-title="SPORTOWE",Eurosport
+http://127.0.0.1:8001/1:0:16:1C8A:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Eurosport 2" tvg-logo="" group-title="SPORTOWE",Eurosport 2 HD
+http://127.0.0.1:8001/1:0:1:290C:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="SportKlub" tvg-logo="" group-title="SPORTOWE",Sport Klub
+http://127.0.0.1:8001/1:0:16:DC0:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="FIGHTKLUB" tvg-logo="" group-title="SPORTOWE",Fight Klub HD
+http://127.0.0.1:8001/1:0:1:13F1:5DC:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2808" tvg-logo="" group-title="SPORTOWE",Fightbox HD
+http://127.0.0.1:8001/1:0:1:3E24:2EE0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1389" tvg-logo="" group-title="SPORTOWE",Golf Channel Polska
+http://127.0.0.1:8001/1:0:1:3E23:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Extreme" tvg-logo="" group-title="SPORTOWE",Extreme Sports HD
+http://127.0.0.1:8001/1:0:19:290A:1EDC:71:820000:0:0:0
+
+#POPULARNONAUKOWE
+
+#EXTINF:-1 tvg-id="CANAL+ Discovery" tvg-id="Discovery Channel" group-title="POPULARNONAUKOWE",Canal+ Discovery HD
+http://127.0.0.1:8001/1:0:1:3A99:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Discovery Channel" tvg-id="Discovery Channel" group-title="POPULARNONAUKOWE",Discovery Channel HD
+http://127.0.0.1:8001/1:0:19:3AB8:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="Discovery Channel" group-title="POPULARNONAUKOWE",Discovery Channel
+http://127.0.0.1:8001/1:0:1:1C93:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Discovery Historia" tvg-id="Discovery Historia" group-title="POPULARNONAUKOWE",Discovery Historia
+http://127.0.0.1:8001/1:0:16:DB2:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Discovery Life" tvg-id="Discovery Life" group-title="POPULARNONAUKOWE",Discovery Life
+http://127.0.0.1:8001/1:0:16:3D56:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Discovery Science" tvg-id="Discovery Science" group-title="POPULARNONAUKOWE",Discovery Science HD
+http://127.0.0.1:8001/1:0:19:290D:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="Discovery Science" group-title="POPULARNONAUKOWE",Discovery Science
+http://127.0.0.1:8001/1:0:1:1CC2:1CE8:71:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="60" tvg-id="Discovery Turbo Xtra" group-title="POPULARNONAUKOWE",Discovery Turbo Xtra HD
+http://127.0.0.1:8001/1:0:19:3A9C:514:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="59" tvg-id="ID" group-title="POPULARNONAUKOWE",ID HD
+http://127.0.0.1:8001/1:0:19:3A9B:514:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="National Geographic Channel" group-title="POPULARNONAUKOWE",National Geographic Channel HD
+http://127.0.0.1:8001/1:0:19:32DF:190:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="National Geographic Channel" group-title="POPULARNONAUKOWE",National Geographic Channel
+http://127.0.0.1:8001/1:0:1:3D5E:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="Nat Geo People" group-title="POPULARNONAUKOWE",Nat Geo People HD
+http://127.0.0.1:8001/1:0:19:2907:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="Nat Geo Wild" group-title="POPULARNONAUKOWE",Nat Geo Wild HD
+http://127.0.0.1:8001/1:0:1:3B65:12C:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="Nat Geo Wild" group-title="POPULARNONAUKOWE",Nat Geo Wild
+http://127.0.0.1:8001/1:0:1:1C8B:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="HISTORY" group-title="POPULARNONAUKOWE",History HD
+http://127.0.0.1:8001/1:0:1:C2F:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="H2" group-title="POPULARNONAUKOWE",H2 HD
+http://127.0.0.1:8001/1:0:19:3E22:2EE0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Adventure" group-title="POPULARNONAUKOWE",Adventure HD
+http://127.0.0.1:8001/1:0:19:10E9:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="Animal Planet" group-title="POPULARNONAUKOWE",Animal Planet HD
+http://127.0.0.1:8001/1:0:1:3B66:12C:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="POLSAT Viasat Nature" group-title="POPULARNONAUKOWE",Polsat Viasat Nature
+http://127.0.0.1:8001/1:0:16:1CCD:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="POLSAT Viasat Explore" group-title="POPULARNONAUKOWE",Polsat Viasat Explore 
+http://127.0.0.1:8001/1:0:19:1CCA:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="POLSAT Viasat History" group-title="POPULARNONAUKOWE",Polsat Viasat History
+http://127.0.0.1:8001/1:0:1:C20:1E78:71:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="" group-title="POPULARNONAUKOWE",Crime and Investigation
+http://127.0.0.1:8001/1:0:1:1C9C:332C:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="3191" tvg-id="Planete+" group-title="POPULARNONAUKOWE",Planete+ HD
+http://127.0.0.1:8001/1:0:19:377E:44C:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1200" tvg-id="Lifetime" group-title="POPULARNONAUKOWE" ,Lifetime HD
+http://127.0.0.1:8001/1:0:1:3E27:2EE0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2397" tvg-id="Kuchnia+" group-title="POPULARNONAUKOWE",Kuchnia+ HD
+http://127.0.0.1:8001/1:0:19:377F:44C:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2400" tvg-id="Domo+" group-title="POPULARNONAUKOWE",Domo+ HD
+http://127.0.0.1:8001/1:0:1:13EF:5DC:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TLC" group-title="POPULARNONAUKOWE",TLC HD
+http://127.0.0.1:8001/1:0:1:3E21:2EE0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1145" tvg-id="BBC Earth" group-title="POPULARNONAUKOWE",BBC Earth HD
+http://127.0.0.1:8001/1:0:19:E08:2D50:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1145" tvg-id="BBC Lifestyle" group-title="POPULARNONAUKOWE",BBC Lifestyle HD
+http://127.0.0.1:8001/1:0:1:7DB:22C4:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="BBC" group-title="POPULARNONAUKOWE",BBC HD
+http://127.0.0.1:8001/1:0:19:DD4:2D50:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2407"  tvg-id="BBC Brit" group-title="POPULARNONAUKOWE",BBC Brit HD
+http://127.0.0.1:8001/1:0:19:7D6:22C4:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Water Planet" group-title="POPULARNONAUKOWE",Water Planet
+http://127.0.0.1:8001/1:0:16:423E:3DB8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN Turbo" group-title="POPULARNONAUKOWE",TVN Turbo HD
+http://127.0.0.1:8001/1:0:1:3DD0:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="TVN Turbo" group-title="POPULARNONAUKOWE",TVN Turbo
+http://127.0.0.1:8001/1:0:1:10DF:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Motowizja HD" group-title="POPULARNONAUKOWE",Motowizja
+http://127.0.0.1:8001/1:0:1:DB4:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN Style" group-title="POPULARNONAUKOWE",TVN Style HD
+http://127.0.0.1:8001/1:0:1:3DCE:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-logo="" tvg-id="TVN Style" group-title="POPULARNONAUKOWE",TVN Style
+http://127.0.0.1:8001/1:0:1:10E0:3E8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2378" tvg-id="Polsat Cafe" group-title="POPULARNONAUKOWE",Polsat Cafe HD
+http://127.0.0.1:8001/1:0:1:3396:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat Food Network" tvg-id="Polsat Food" group-title="POPULARNONAUKOWE",Food Network HD
+http://127.0.0.1:8001/1:0:19:3DD9:640:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="3179" tvg-id="Wellbeing Network" group-title="POPULARNONAUKOWE",Wellbeing Network HD
+http://127.0.0.1:8001/1:0:1:4277:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Fokus TV" group-title="POPULARNONAUKOWE",Fokus TV
+http://127.0.0.1:8001/1:0:1:10E1:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Travel Channel" group-title="POPULARNONAUKOWE",Travel Channel HD
+http://127.0.0.1:8001/1:0:19:3DD8:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="E! Entertainment" group-title="POPULARNONAUKOWE",E!
+http://127.0.0.1:8001/1:0:1:427F:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Historia" group-title="POPULARNONAUKOWE",TVP Historia
+http://127.0.0.1:8001/1:0:1:DC4:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Kultura" group-title="POPULARNONAUKOWE",TVP Kultura
+http://127.0.0.1:8001/1:0:1:3D59:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Rozrywka" group-title="POPULARNONAUKOWE",TVP Rozrywka
+http://127.0.0.1:8001/1:0:1:4288:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://satkurier.pl/uploads/26705.jpg" program=16994 tvg-id="" group-title="POPULARNONAUKOWE",Active Family
+http://127.0.0.1:8001/1:0:1:10DD:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TBN Polska" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/TBN%20POLSKA.png" group-title="POPULARNONAUKOWE",TBN Polska
+http://127.0.0.1:8001/1:0:1:35EF:1388:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="HGTV" type="stream" channelId="1418" group-title="POPULARNONAUKOWE",HGTV HD
+http://127.0.0.1:8001/1:0:1:10DE:3E8:13E:820000:0:0:0
+
+#INFORMACYJNE
+
+#EXTINF:-1 tvg-id="Polsat News" group-title="INFORMACYJNE",Polsat News HD
+http://127.0.0.1:8001/1:0:1:3399:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Polsat News 2" group-title="INFORMACYJNE",Polsat News 2
+http://127.0.0.1:8001/1:0:16:3333:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN 24" group-title="INFORMACYJNE",TVN 24 HD
+http://127.0.0.1:8001/1:0:1:3DD2:640:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN 24" tvg-logo="" group-title="INFORMACYJNE",TVN 24
+http://127.0.0.1:8001/1:0:1:10D8:3E8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-id="TVN 24 BiS" channelId="2385" group-title="INFORMACYJNE",TVN 24 Biznes i Swiat HD
+http://127.0.0.1:8001/1:0:19:10EA:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Superstacja" group-title="INFORMACYJNE",Superstacja
+http://127.0.0.1:8001/1:0:16:1CBE:1CE8:71:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="3178" tvg-id="Republika TV" group-title="INFORMACYJNE",TV Republika
+http://stream4.videostar.pl/999_tvrtest/smil:4321abr.ism/playlist.m3u8
+#EXTINF:-1 tvg-id="TVP Info" group-title="INFORMACYJNE",TVP Info
+http://127.0.0.1:8001/1:0:1:113A:2AF8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVN Meteo Active" tvg-logo="" group-title="INFORMACYJNE",TVN Meteo Active
+http://127.0.0.1:8001/1:0:1:10DE:3E8:13E:820000:0:0:0
+
+#BAJKI
+
+#EXTINF:-1 tvg-id="Cartoon Network"  group-title="BAJKI",Cartoon Network HD
+http://127.0.0.1:8001/1:0:1:2906:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Boomerang" group-title="BAJKI",Boomerang
+http://127.0.0.1:8001/1:0:16:1CB8:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Disney Channel"  group-title="BAJKI",Disney Channel HD
+http://127.0.0.1:8001/1:0:1:1CB6:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Disney Junior" group-title="BAJKI",Disney Junior
+http://127.0.0.1:8001/1:0:16:2938:1EDC:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Disney XD"  group-title="BAJKI",Disney XD
+http://127.0.0.1:8001/1:0:16:1CB5:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="MiniMini+"  group-title="BAJKI",MiniMini+ HD
+http://127.0.0.1:8001/1:0:19:32FE:190:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Nick Jr."  group-title="BAJKI",Nick Jr
+http://127.0.0.1:8001/1:0:1:6:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Nickelodeon HD"  group-title="BAJKI",Nickelodeon HD
+http://127.0.0.1:8001/1:0:1:E:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Nickelodeon"  group-title="BAJKI",Nickelodeon
+http://127.0.0.1:8001/1:0:1:B:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Teletoon"  group-title="BAJKI",Teletoon+ HD
+http://127.0.0.1:8001/1:0:19:379B:44C:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="3261"  group-title="BAJKI",JimJam Polsat
+http://127.0.0.1:8001/1:0:1:1CB7:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP ABC"  group-title="BAJKI",TVP ABC
+http://127.0.0.1:8001/1:0:1:DB5:2D50:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Da Vinci Learning"  group-title="BAJKI",Da Vinci Learning
+http://127.0.0.1:8001/1:0:1:4280:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1253"  group-title="BAJKI",BBC CBeebies
+http://127.0.0.1:8001/1:0:1:7D9:22C4:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Baby TV"  group-title="BAJKI",Baby TV
+http://127.0.0.1:8001/1:0:1:579:2DB4:13E:820000:0:0:0
+
+#RESZTA
+
+
+#EXTINF:-1 tvg-id="Polsat 2" group-title="RESZTA",Polsat 2 HD
+http://127.0.0.1:8001/1:0:1:339A:3390:71:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP Polonia" group-title="RESZTA",TVP Polonia
+http://127.0.0.1:8001/1:0:1:132B:33F4:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVP 3" group-title="RESZTA",TVP 3
+http://127.0.0.1:8001/1:0:1:113B:2AF8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Tele 5" group-title="RESZTA",Tele 5
+http://127.0.0.1:8001/1:0:1:423B:3DB8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Polonia 1" group-title="RESZTA",Polonia 1
+http://127.0.0.1:8001/1:0:1:423C:3DB8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="PULS 2" group-title="RESZTA",Puls 2
+http://127.0.0.1:8001/1:0:16:10E3:3E8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-id="TV 6" channelId="2349" group-title="RESZTA",TV 6
+http://127.0.0.1:8001/1:0:1:1CBD:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="NTL Radomsko" group-title="RESZTA",NTL
+http://127.0.0.1:8001/1:0:16:10E4:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVS" group-title="RESZTA",TVS
+http://127.0.0.1:8001/1:0:1:3D58:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="ATM Rozrywka" group-title="RESZTA",ATM Rozrywka
+http://127.0.0.1:8001/1:0:1:1CBA:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Super Polsat" group-title="RESZTA",Super Polsat
+http://127.0.0.1:8001/1:0:16:1CC0:1CE8:71:820000:0:0:0
+
+#MUZYCZNE
+
+#EXTINF:-1 type="stream" tvg-logo="http://ncplusgo.img.rd.insyscd.net/ch-mtv-polska/ch-mtv-polska-309.png" ,MTV Polska
+http://127.0.0.1:8001/1:0:1:2:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="MTV Live HD" ,MTV Live HD
+http://127.0.0.1:8001/1:0:19:1:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="MTV Rocks" ,MTV Rocks
+http://127.0.0.1:8001/1:0:1:1CB9:1CE8:71:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="984"   ,VIVA POLSKA
+http://127.0.0.1:8001/1:0:1:5:3200:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="4fun TV" ,4Fun TV
+http://127.0.0.1:8001/1:0:1:428D:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="3200" ,4Fun Fit and Dance
+http://127.0.0.1:8001/1:0:1:428F:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="4FUN HITS" ,4FUN HITS
+http://127.0.0.1:8001/1:0:1:428E:2BC0:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="8TV" ,8 TV
+http://127.0.0.1:8001/1:0:1:10DB:3E8:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="Muzo TV" ,Muzo TV
+http://127.0.0.1:8001/1:0:1:4279:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2430"   ,Kino Polska Muzyka
+http://127.0.0.1:8001/1:0:1:DAE:2D50:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2343"   ,Polo TV
+http://127.0.0.1:8001/1:0:1:10DA:3E8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://starstv.eu/wp-content/themes/base/img/logo.png" ,Stars TV
+http://starstv.live.e55-po.insyscd.net/starstvhd.smil/chunklist_b1100000.m3u8
+#EXTINF:-1 tvg-id="POWER TV" ,POWER TV
+http://127.0.0.1:8001/1:0:16:10E7:3E8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1654"   ,VOX Music TV
+http://127.0.0.1:8001/1:0:1:3D57:2C88:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2368" ,Disco Polo Music
+http://127.0.0.1:8001/1:0:1:1C8C:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="Hip Hop TV" ,HIP HOP TV
+http://127.0.0.1:8001/1:0:1:3D63:2C88:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TRACE TV" ,TRACE TV
+http://127.0.0.1:8001/1:0:1:DB6:2D50:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="151"   ,VH1
+http://127.0.0.1:8001/1:0:1:7:3200:13E:820000:0:0:0
+
+
+#XXL
+
+#EXTINF:-1 type="stream" tvg-logo="http://ncplusgo.img.rd.insyscd.net/ch-zest-tv/ch-zest-tv-299.png" ,Zest TV
+http://127.0.0.1:8001/1:0:1:DB3:2D50:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="683" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/redlight%20hd.jpg" ,Redlight HD
+http://127.0.0.1:8001/1:0:1:4224:3DB8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="763" ,SCT HQ
+http://127.0.0.1:8001/1:0:1:35C3:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="2153" ,Dorcel TV HD
+http://127.0.0.1:8001/1:0:1:4205:2F44:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="519" ,Hustler HD
+http://127.0.0.1:8001/1:0:1:4225:3DB8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/tgirls.jpg" ,TGIRLS TV
+http://127.0.0.1:8001/1:0:1:35C0:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/VIVID%20TOUCH.png" ,VIVID TOUCH
+http://127.0.0.1:8001/1:0:1:4228:3DB8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1222" ,Penthouse TV
+http://127.0.0.1:8001/1:0:19:26B3:43E:1:C00000:0:0:0
+#EXTINF:-1 type="stream" channelId="2846" ,PRIVATE TV
+http://127.0.0.1:8001/1:0:1:1360:33F4:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="275" ,XXL PL
+http://127.0.0.1:8001/1:0:1:1D5:26AC:13F:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://satkurier.pl/uploads/32155.png" ,EvilAngel TV
+http://127.0.0.1:8001/1:0:1:35C0:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1906" ,CENTOXCENTO TV
+http://127.0.0.1:8001/1:0:1:35C6:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/sesto%20sento.jpg" ,SESTO SENSO TV
+http://127.0.0.1:8001/1:0:1:35C7:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1904" ,Exotica TV
+http://127.0.0.1:8001/1:0:1:35C1:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="1905" ,Pink O TV
+http://127.0.0.1:8001/1:0:1:35D8:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="3005" ,Passion XXX
+http://127.0.0.1:8001/1:0:1:35C8:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="518"  ,Brazzers TV
+http://127.0.0.1:8001/1:0:1:1D25:2FA8:13E:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="98" ,ZDF
+http://127.0.0.1:8001/1:0:1:1F4B:319C:13E:820000:0:0:0 
+#EXTINF:-1 type="stream" channelId="113" ,ART HD
+http://127.0.0.1:8001/1:0:1:133:3E1C:13F:820000:0:0:0
+#EXTINF:-1 type="stream" channelId="94" ,Das Erste HD
+http://127.0.0.1:8001/1:0:1:E26:708:C8:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/LIVECHANNEL.jpg" ,LIVECHANNEL
+http://127.0.0.1:8001/1:0:1:35C9:1388:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD TEST
+http://127.0.0.1:8001/1:0:1:4285:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 201
+http://127.0.0.1:8001/1:0:1:427C:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 202
+http://127.0.0.1:8001/1:0:1:4269:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 203
+http://127.0.0.1:8001/1:0:1:426A:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 204
+http://127.0.0.1:8001/1:0:1:426B:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 205
+http://127.0.0.1:8001/1:0:1:426C:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 206
+http://127.0.0.1:8001/1:0:1:426D:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 207
+http://127.0.0.1:8001/1:0:1:426E:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 208
+http://127.0.0.1:8001/1:0:1:426F:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 209
+http://127.0.0.1:8001/1:0:1:4270:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 211
+http://127.0.0.1:8001/1:0:1:4272:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 212
+http://127.0.0.1:8001/1:0:1:4273:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 213
+http://127.0.0.1:8001/1:0:1:4274:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,VOD 214
+http://127.0.0.1:8001/1:0:1:4275:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,xxxVOD1
+http://127.0.0.1:8001/1:0:1:427D:2BC0:13E:820000:0:0:0
+#EXTINF:-1 type="stream" tvg-logo="http://darius.evai.pl/IKONY%20DO%20DREAMBOX/Cyfrowy%20Polsat%20VOD.png" ,xxxVOD2
+http://127.0.0.1:8001/1:0:1:427E:2BC0:13E:820000:0:0:0
