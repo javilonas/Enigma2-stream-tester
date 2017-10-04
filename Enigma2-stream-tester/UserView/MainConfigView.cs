@@ -56,17 +56,26 @@ namespace Enigma2_stream_tester.UserView
 
         private List<Data> LoadChannelsContent()
         {
-            _channelsConfigContentList = new List<Data>();
-            var list = new List<Data>();
-            var counter = 0;
-            foreach (var item in Directory.GetFiles(Directory.GetCurrentDirectory() + "\\configs", "*.channels"))
+            
+            try
             {
-                var content = File.ReadAllLines(item);
-                var test = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\configs", "*.channels");
-                list.Add(new Data(test[counter].Remove(0, test[counter].LastIndexOf("\\", StringComparison.Ordinal)+1),content));
-                counter += 1;
+                _channelsConfigContentList = new List<Data>();
+                var list = new List<Data>();
+                var counter = 0;
+                foreach (var item in Directory.GetFiles(Directory.GetCurrentDirectory() + "\\configs", "*.channels"))
+                {
+                    var content = File.ReadAllLines(item);
+                    var test = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\configs", "*.channels");
+                    list.Add(new Data(test[counter].Remove(0, test[counter].LastIndexOf("\\", StringComparison.Ordinal) + 1), content));
+                    counter += 1;
+                }
+                return list;
             }
-            return list;
+            catch (Exception e)
+            {
+                _form.AddLogToFile(e.Message);
+            }
+            return null;
         }
 
         private void TimeoutValue_Changed(object sender, EventArgs e)
@@ -76,18 +85,25 @@ namespace Enigma2_stream_tester.UserView
 
         private void FindCurrentChannel(IEnumerable<Data> listOfChannels)
         {
-            var channel = _form.ConfigurationItems[0].defaultChannel;
-            foreach (var item in listOfChannels)
+            try
             {
-                cfgLists_comboBox.Items.Add(item.PathData.Replace(".channels", string.Empty));
-                var index = Array.IndexOf(item.StringData, channel);
-                if (index > -1)
+                var channel = _form.ConfigurationItems[0].defaultChannel;
+                foreach (var item in listOfChannels)
                 {
-                    cfgLists_comboBox.SelectedText = item.PathData.Replace(".channels",string.Empty);
-                    var dot = item.StringData[index - 1].LastIndexOf(",", StringComparison.Ordinal);
-                    var newChannel = item.StringData[index - 1].Remove(0, dot + 1);
-                    cfgChannels_comboBox.SelectedText = newChannel;
+                    cfgLists_comboBox.Items.Add(item.PathData.Replace(".channels", string.Empty));
+                    var index = Array.IndexOf(item.StringData, channel);
+                    if (index > -1)
+                    {
+                        cfgLists_comboBox.SelectedText = item.PathData.Replace(".channels", string.Empty);
+                        var dot = item.StringData[index - 1].LastIndexOf(",", StringComparison.Ordinal);
+                        var newChannel = item.StringData[index - 1].Remove(0, dot + 1);
+                        cfgChannels_comboBox.SelectedText = newChannel;
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                _form.AddLogToFile(e.Message);
             }
         }
 
@@ -118,7 +134,6 @@ namespace Enigma2_stream_tester.UserView
 
             if (selectedIndex == -1)
             {
-                return;
             }
             else
             {
@@ -128,31 +143,38 @@ namespace Enigma2_stream_tester.UserView
 
         private void List_IndexChanged(object sender, EventArgs e)
         {
-            cfgChannels_comboBox.Enabled = true;
-            cfgChannels_comboBox.Items.Clear();
-            var channel = _form.ConfigurationItems[0].defaultChannel;
-            foreach (var item in _channelsConfigContentList)
+            try
             {
-                if(item.PathData.Equals(cfgLists_comboBox.SelectedItem+".channels"))
+                cfgChannels_comboBox.Enabled = true;
+                cfgChannels_comboBox.Items.Clear();
+
+                foreach (var item in _channelsConfigContentList)
                 {
-                    foreach (var line in item.StringData)
+                    if (item.PathData.Equals(cfgLists_comboBox.SelectedItem + ".channels"))
                     {
-                        if (line.StartsWith("/1:0"))
+                        foreach (var line in item.StringData)
                         {
-                            _channelsLinks.Add(line);
+                            if (line.StartsWith("/1:0"))
+                            {
+                                _channelsLinks.Add(line);
+                            }
+                            else
+                            {
+                                var dot = line.LastIndexOf(",", StringComparison.Ordinal);
+                                var newChannel = line.Remove(0, dot + 1);
+                                _channelsNames.Add(newChannel);
+                            }
                         }
-                        else
+                        foreach (var channelName in _channelsNames)
                         {
-                            var dot = line.LastIndexOf(",", StringComparison.Ordinal);
-                            var newChannel = line.Remove(0, dot + 1);
-                            _channelsNames.Add(newChannel);
+                            cfgChannels_comboBox.Items.Add(channelName);
                         }
-                    }
-                    foreach (var channelName in _channelsNames)
-                    {
-                        cfgChannels_comboBox.Items.Add(channelName);
                     }
                 }
+            }
+            catch (Exception exception)
+            {
+                _form.AddLogToFile(exception.Message);
             }
         }
     }

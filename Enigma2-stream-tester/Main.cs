@@ -190,6 +190,7 @@ namespace Enigma2_stream_tester
             catch (Exception ec)
             {
                 AddLogToFile(ec.Message);
+                Application.Exit();
             }
         }
 
