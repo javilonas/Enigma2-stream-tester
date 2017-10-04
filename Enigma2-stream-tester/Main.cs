@@ -103,7 +103,7 @@ namespace Enigma2_stream_tester
             }
             catch (Exception e)
             {
-                AddLogToFile(e.Message);
+                AddLogToFile(e.ToString());
                 return null;
             }
             
@@ -121,7 +121,7 @@ namespace Enigma2_stream_tester
             }
             catch (Exception e)
             {
-                AddLogToFile(e.Message);
+                AddLogToFile(e.ToString());
             }
         }
 
@@ -189,7 +189,7 @@ namespace Enigma2_stream_tester
             }
             catch (Exception ec)
             {
-                AddLogToFile(ec.Message);
+                AddLogToFile(ec.ToString());
                 Application.Exit();
             }
         }
@@ -201,20 +201,31 @@ namespace Enigma2_stream_tester
 
         private void TesterToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (_mainConfigView != null)
+                {
+                    ConfigurationItems[0].scanPort = _mainConfigView.Port8001_Checkbox.Checked ? "8001" : "8002";
+                    ConfigurationItems[0].parallelOpt = _mainConfigView.Speed_Trackbar.Value;
+                    ConfigurationItems[0].timeout = _mainConfigView.Timeout_Trackbar.Value;
+                }
+                ///
+                /// Channels added in _mainConfigView
+                /// 
+                SaveJson(ConfigurationItems);
+                //
+                pagePanel.Controls.Clear();
+                pagePanel.Controls.Add(_mainView);
+                _mainView.Dock = DockStyle.Fill;
+                _mainView.BringToFront();
+            }
+            catch (Exception exception)
+            {
+                AddLogToFile(exception.ToString());
+            }
             //
             //save to json config file
-            ConfigurationItems[0].scanPort = _mainConfigView.Port8001_Checkbox.Checked ? "8001" : "8002";
-            ConfigurationItems[0].parallelOpt = _mainConfigView.Speed_Trackbar.Value;
-            ConfigurationItems[0].timeout = _mainConfigView.Timeout_Trackbar.Value;
-            ///
-            /// Channels added in _mainConfigView
-            /// 
-            SaveJson(ConfigurationItems);
-            //
-            pagePanel.Controls.Clear();
-            pagePanel.Controls.Add(_mainView);
-            _mainView.Dock = DockStyle.Fill;
-            _mainView.BringToFront();
+            
         }
 
         private void MainToolStripMenuItem_Click(object sender, EventArgs e)

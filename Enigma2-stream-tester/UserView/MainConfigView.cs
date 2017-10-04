@@ -73,7 +73,7 @@ namespace Enigma2_stream_tester.UserView
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
+                _form.AddLogToFile(e.ToString());
             }
             return null;
         }
@@ -103,7 +103,7 @@ namespace Enigma2_stream_tester.UserView
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
+                _form.AddLogToFile(e.ToString());
             }
         }
 
@@ -174,7 +174,7 @@ namespace Enigma2_stream_tester.UserView
             }
             catch (Exception exception)
             {
-                _form.AddLogToFile(exception.Message);
+                _form.AddLogToFile(exception.ToString());
             }
         }
     }
