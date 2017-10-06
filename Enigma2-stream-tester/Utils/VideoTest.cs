@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading;
@@ -37,30 +38,33 @@ namespace Enigma2_stream_tester.Utils
                     Thread.Sleep(timeout);
                     httpClient.CancelAsync();
                 }
-                var frameCount = Info(outputFile);
+                
+                var infoTuple = Info(outputFile);
+                var frameCount = infoTuple.Item1;
+                var resolution = infoTuple.Item2;
                 if (frameCount > timeout / 1000 * 16) // Need to develop a way of estimating the quality of the source
                 {
-                    _operation.NewM3U(ip, port, true); //save as best m3u
+                    _operation.NewM3U(ip, port, true, resolution); //save as best m3u
                 }
                 if (frameCount > 2)
                 {
-                    _operation.NewM3U(ip, port, false); //save as new m3u
+                    _operation.NewM3U(ip, port, false, resolution); //save as new m3u
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                _form.AddLogToFile(e.ToString());
             }
         }
 
-        public long Info(string path) //path = mpeg file path
+        public Tuple<int, string> Info(string path) //path = mpeg file path
         {
             try
             {
                 var media = new MediaFile(path);
                 var f = new FileInfo(path);
                 var videoFile = media.Video;
-                if (videoFile.Count < 1) return 0;
+                if (videoFile.Count < 1) return Tuple.Create(0, string.Empty);
                 var codecType = videoFile[0].InternetMediaType;
                 var videoHeight = videoFile[0].Height;
                 var videoWidth = videoFile[0].Width;
@@ -72,12 +76,12 @@ namespace Enigma2_stream_tester.Utils
                 _form.AddToLog("Resolution : " + videoWidth + "x" + videoHeight);
                 _form.AddToLog("File length : " + fileLength);
                 _form.AddToLog("Frames captured : " + frameCount);
-                return frameCount;
+                return Tuple.Create(frameCount, videoHeight.ToString());
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
-                return 0;
+                _form.AddLogToFile(e.ToString());
+                return Tuple.Create(0, string.Empty);
             }
         }
     }

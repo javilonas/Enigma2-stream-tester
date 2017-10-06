@@ -35,14 +35,14 @@ namespace Enigma2_stream_tester.Utils
                 _form.AddLogToFile(e.Message);
                 return null;
             }
-            
         }
 
-        public void NewM3U(string newIp,string port,bool best)
+        public void NewM3U(string newIp,string port,bool best, string resolution)
         {
             try
             {
                 var bestStreams = string.Empty;
+                if (port == "8002") { best = false;}
                 if (best) { bestStreams = "Best\\";}
                 var template = Sample();
                 var ip = string.Empty;
@@ -64,8 +64,12 @@ namespace Enigma2_stream_tester.Utils
                     Directory.CreateDirectory(_currentDirM3U);
                     Directory.CreateDirectory(_currentDirM3U+ "\\Best");
                 }
+                if (!Directory.Exists(_currentDirM3U + "\\" + resolution) && port == "8002")
+                {
+                    Directory.CreateDirectory(_currentDirM3U + "\\" + resolution);
+                }
                 Thread.Sleep(500);
-                File.WriteAllLines(_currentDirM3U + "\\" + bestStreams + newIp + ".m3u", template);
+                File.WriteAllLines(_currentDirM3U + "\\" + resolution + "p" + "\\" + bestStreams + newIp + ".m3u", template);
             }
             catch (Exception e)
             {

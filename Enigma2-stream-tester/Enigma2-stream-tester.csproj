@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserView\FtpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserView\FtpPage.Designer.cs">
+      <DependentUpon>FtpPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserView\MainConfigView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,6 +99,7 @@
     </Compile>
     <Compile Include="Tester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Ftp.cs" />
     <Compile Include="Utils\VideoTest.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -106,6 +113,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserView\FtpPage.resx">
+      <DependentUpon>FtpPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserView\MainConfigView.resx">
       <DependentUpon>MainConfigView.cs</DependentUpon>
     </EmbeddedResource>

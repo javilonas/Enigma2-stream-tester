@@ -70,16 +70,20 @@ namespace Enigma2_stream_tester
                 progressBarCounter += 1;
             });
 
-            GC.Collect(); //clean cache
-            MessageBox.Show(@"Done!", @"Info!");
             BeginInvoke((Action) delegate
             {
+                ScanProgressBar.Value = ScanProgressBar.Maximum;
+                progressValue_Label.Text =
+                    (int) ((float) ScanProgressBar.Value / (float) ScanProgressBar.Maximum * 100) + @"%"; //for visual 100%
+                GC.Collect(); //clean cache
+                MessageBox.Show(@"Done!", @"Info!");
                 ScanProgressBar.Value = 0;
-                progressValue_Label.Text = (int)((float)ScanProgressBar.Value / (float)ScanProgressBar.Maximum * 100) + "%";
+                progressValue_Label.Text =
+                    (int) ((float) ScanProgressBar.Value / (float) ScanProgressBar.Maximum * 100) + "%";
                 _mainView.StartButton.Enabled = true;
+                Operation.OpenOutputDirectory();
             });
             Operation.RemoveTemp(Operation.DirectoryPath); //remove files and dir with *.mpeg
-            Operation.OpenOutputDirectory();
         }
 
         public class Item
@@ -208,10 +212,10 @@ namespace Enigma2_stream_tester
                     ConfigurationItems[0].scanPort = _mainConfigView.Port8001_Checkbox.Checked ? "8001" : "8002";
                     ConfigurationItems[0].parallelOpt = _mainConfigView.Speed_Trackbar.Value;
                     ConfigurationItems[0].timeout = _mainConfigView.Timeout_Trackbar.Value;
+                    //
+                    // Channels added in _mainConfigView
+                    //
                 }
-                ///
-                /// Channels added in _mainConfigView
-                /// 
                 SaveJson(ConfigurationItems);
                 //
                 pagePanel.Controls.Clear();

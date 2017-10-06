@@ -147,6 +147,8 @@ namespace Enigma2_stream_tester.UserView
             {
                 cfgChannels_comboBox.Enabled = true;
                 cfgChannels_comboBox.Items.Clear();
+                _channelsLinks.Clear();
+                _channelsNames.Clear();
 
                 foreach (var item in _channelsConfigContentList)
                 {
