@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading;
+using Enigma2_stream_tester.UserView;
 using MediaInfoDotNet;
 
 namespace Enigma2_stream_tester.Utils

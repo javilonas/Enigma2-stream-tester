@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Enigma2_stream_tester.UserView;
 
 namespace Enigma2_stream_tester.Utils
 {
@@ -32,7 +33,7 @@ namespace Enigma2_stream_tester.Utils
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
+                _form.AddLogToFile(e.ToString());
                 return null;
             }
         }
@@ -72,10 +73,17 @@ namespace Enigma2_stream_tester.Utils
                 }
                 Thread.Sleep(500);
                 File.WriteAllLines(_currentDirM3U + "\\" + resolution + "\\" + bestStreams + newIp + ".m3u", template);
+                
+                //send to ftp
+                if (_form.FtpView.ConnectionStatus && _form.FtpView.ftp_checkBox.Enabled && _form.FtpView.ChoosenFolder != string.Empty)
+                {
+                    _form.FtpView.Client.Upload(_form.FtpView.ChoosenFolder + "\\" + newIp + ".m3u",
+                        _currentDirM3U + "\\" + resolution + "\\" + bestStreams + newIp + ".m3u");
+                }
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
+                _form.AddLogToFile(e.ToString());
             }
         }
 
@@ -134,7 +142,7 @@ namespace Enigma2_stream_tester.Utils
             catch (Exception ec)
             {
                 MessageBox.Show(@"You have not selected a folder." + ec, @"Błąd");
-                _form.AddLogToFile(ec.Message);
+                _form.AddLogToFile(ec.ToString());
             }
             return null;
         }
@@ -148,7 +156,7 @@ namespace Enigma2_stream_tester.Utils
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
+                _form.AddLogToFile(e.ToString());
             }
             return lineWithIp == string.Empty ? null : lineWithIp;
         }
@@ -175,7 +183,7 @@ namespace Enigma2_stream_tester.Utils
             }
             catch (Exception e)
             {
-                _form.AddLogToFile(e.Message);
+                _form.AddLogToFile(e.ToString());
             }
         }
 

@@ -20,6 +20,7 @@ namespace Enigma2_stream_tester
         public List<Item> ConfigurationItems; //cannot be readonly, settings forms needs to have posibility to chanege values 
         private readonly MainPage _mainView;
         private MainConfigView _mainConfigView;
+        public FtpPage FtpView;
 
         public Main()
         {
@@ -79,7 +80,7 @@ namespace Enigma2_stream_tester
                 MessageBox.Show(@"Done!", @"Info!");
                 ScanProgressBar.Value = 0;
                 progressValue_Label.Text =
-                    (int) ((float) ScanProgressBar.Value / (float) ScanProgressBar.Maximum * 100) + "%";
+                    (int) ((float) ScanProgressBar.Value / (float) ScanProgressBar.Maximum * 100) + @"%";
                 _mainView.StartButton.Enabled = true;
                 Operation.OpenOutputDirectory();
             });
@@ -110,7 +111,6 @@ namespace Enigma2_stream_tester
                 AddLogToFile(e.ToString());
                 return null;
             }
-            
         }
 
         public void SaveJson(List<Item> config)
@@ -121,7 +121,6 @@ namespace Enigma2_stream_tester
                 {
                     sw.WriteLine(JsonConvert.SerializeObject(config));
                 }
-                
             }
             catch (Exception e)
             {
@@ -227,18 +226,32 @@ namespace Enigma2_stream_tester
             {
                 AddLogToFile(exception.ToString());
             }
-            //
-            //save to json config file
-            
         }
 
         private void MainToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _mainConfigView = new MainConfigView(this);
+            if (_mainConfigView == null)
+            {
+                _mainConfigView = new MainConfigView(this);
+            }
+            
             pagePanel.Controls.Clear();
             pagePanel.Controls.Add(_mainConfigView);
             _mainConfigView.Dock = DockStyle.Fill;
             _mainConfigView.BringToFront();
+        }
+
+        private void FtpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (FtpView == null)
+            {
+                FtpView = new FtpPage(this);
+            }
+
+            pagePanel.Controls.Clear();
+            pagePanel.Controls.Add(FtpView);
+            FtpView.Dock = DockStyle.Fill;
+            FtpView.BringToFront();
         }
     }
 }

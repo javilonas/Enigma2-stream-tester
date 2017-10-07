@@ -118,6 +118,7 @@
             this.fTPSettingsToolStripMenuItem.Name = "fTPSettingsToolStripMenuItem";
             this.fTPSettingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fTPSettingsToolStripMenuItem.Text = "FTP settings";
+            this.fTPSettingsToolStripMenuItem.Click += new System.EventHandler(this.FtpToolStripMenuItem_Click);
             // 
             // mySQLToolStripMenuItem
             // 

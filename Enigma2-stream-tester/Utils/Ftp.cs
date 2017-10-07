@@ -4,7 +4,7 @@ using System.Net;
 
 namespace Enigma2_stream_tester.Utils
 {
-    internal class Ftp
+    public class Ftp
     {
         private const int BufferSize = 2048;
         private FtpWebRequest _ftpRequest;
