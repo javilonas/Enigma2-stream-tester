@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace Enigma2_stream_tester.Utils
 {
     internal class Configuration
     {
+        //private
         private readonly Main _form;
 
         public Configuration(Main form)
@@ -18,7 +14,7 @@ namespace Enigma2_stream_tester.Utils
 
         public void SaveJson()
         {
-            var config = JsonConvert.SerializeObject(_form.LoadJson()); 
+            JsonConvert.SerializeObject(_form.LoadJson()); 
         }
     }
 }

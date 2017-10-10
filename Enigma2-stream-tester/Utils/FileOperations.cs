@@ -75,6 +75,7 @@ namespace Enigma2_stream_tester.Utils
                 File.WriteAllLines(_currentDirM3U + "\\" + resolution + "\\" + bestStreams + newIp + ".m3u", template);
                 
                 //send to ftp
+                if (_form.FtpView.ftp_checkBox == null) return;
                 if (_form.FtpView.ConnectionStatus && _form.FtpView.ftp_checkBox.Enabled && _form.FtpView.ChoosenFolder != string.Empty)
                 {
                     _form.FtpView.Client.Upload(_form.FtpView.ChoosenFolder + "\\" + newIp + ".m3u",

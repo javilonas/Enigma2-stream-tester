@@ -13,14 +13,16 @@ namespace Enigma2_stream_tester
 {
     public partial class Main : Form
     {
+        //public
         public FileOperations Operation;
         public VideoTest Video;
+        public List<Item> ConfigurationItems; //cannot be readonly, settings forms needs to have posibility to chanege values 
+        public FtpPage FtpView;
+        //private
         private List<string> _filePathList;
         private List<string[]> _filesContentList;
-        public List<Item> ConfigurationItems; //cannot be readonly, settings forms needs to have posibility to chanege values 
         private readonly MainPage _mainView;
         private MainConfigView _mainConfigView;
-        public FtpPage FtpView;
 
         public Main()
         {
