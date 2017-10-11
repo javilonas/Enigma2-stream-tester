@@ -18,10 +18,12 @@ namespace Enigma2_stream_tester
         public VideoTest Video;
         public List<Item> ConfigurationItems; //cannot be readonly, settings forms needs to have posibility to chanege values 
         public FtpPage FtpView;
+        public MainPage MainView;
+
         //private
         private List<string> _filePathList;
         private List<string[]> _filesContentList;
-        private readonly MainPage _mainView;
+        
         private MainConfigView _mainConfigView;
 
         public Main()
@@ -29,18 +31,18 @@ namespace Enigma2_stream_tester
             InitializeComponent();
             ConfigurationItems = LoadJson(); //load config
             Video = new VideoTest(this);
-            _mainView = new MainPage(this);
+            MainView = new MainPage(this);
 
             //run tester page first
             pagePanel.Controls.Clear();
-            pagePanel.Controls.Add(_mainView);
-            _mainView.Dock = DockStyle.Fill;
-            _mainView.BringToFront();
+            pagePanel.Controls.Add(MainView);
+            MainView.Dock = DockStyle.Fill;
+            MainView.BringToFront();
         }
 
         public void Start_Click(object sender, EventArgs e)
         {
-            _mainView.StartButton.Enabled = false;
+            MainView.StartButton.Enabled = false;
             var worker = new Thread(Work) {IsBackground = true};
             worker.Start();
         }
@@ -55,7 +57,7 @@ namespace Enigma2_stream_tester
             BeginInvoke((Action) delegate { ScanProgressBar.Maximum = _filePathList.Count; });
             var progressBarCounter = 0;
             //
-
+            
             //parallel restrict
             var parallelOptions = new ParallelOptions {MaxDegreeOfParallelism = ConfigurationItems[0].parallelOpt };
             //
@@ -83,7 +85,7 @@ namespace Enigma2_stream_tester
                 ScanProgressBar.Value = 0;
                 progressValue_Label.Text =
                     (int) ((float) ScanProgressBar.Value / (float) ScanProgressBar.Maximum * 100) + @"%";
-                _mainView.StartButton.Enabled = true;
+                MainView.StartButton.Enabled = true;
                 Operation.OpenOutputDirectory();
             });
             Operation.RemoveTemp(Operation.DirectoryPath); //remove files and dir with *.mpeg
@@ -136,7 +138,7 @@ namespace Enigma2_stream_tester
             {
                 foreach (var item in log)
                 {
-                    _mainView.Log_listBox.Items.Add(DateTime.Now.ToString("HH:mm:ss tt") + " : " + item);
+                    MainView.Log_listBox.Items.Add(DateTime.Now.ToString("HH:mm:ss tt") + " : " + item);
                     LogScroll();
                 }
             });
@@ -146,7 +148,7 @@ namespace Enigma2_stream_tester
         {
             BeginInvoke((Action) delegate
             {
-                _mainView.Log_listBox.Items.Add(DateTime.Now.ToString("HH:mm:ss tt") + " : " + log);
+                MainView.Log_listBox.Items.Add(DateTime.Now.ToString("HH:mm:ss tt") + " : " + log);
                 LogScroll();
             });
         }
@@ -165,8 +167,8 @@ namespace Enigma2_stream_tester
 
         public void LogScroll()
         {
-            var visibleItems = _mainView.Log_listBox.ClientSize.Height / _mainView.Log_listBox.ItemHeight;
-            _mainView.Log_listBox.TopIndex = Math.Max(_mainView.Log_listBox.Items.Count - visibleItems + 1, 0);
+            var visibleItems = MainView.Log_listBox.ClientSize.Height / MainView.Log_listBox.ItemHeight;
+            MainView.Log_listBox.TopIndex = Math.Max(MainView.Log_listBox.Items.Count - visibleItems + 1, 0);
         }
 
         private void EnableMenuItem_Click(object sender, EventArgs e)
@@ -177,11 +179,12 @@ namespace Enigma2_stream_tester
         private void LoadFilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Operation = new FileOperations(this);
-            var tuple = Operation.ScanDirectory();
-            if (tuple == null) return;
-            _mainView.StartButton.Enabled = true;
-            _filePathList = tuple.Item1;
-            _filesContentList = tuple.Item2;
+            (_filePathList, _filesContentList) = Operation.ScanDirectory();
+            if (_filePathList == null || _filesContentList == null)
+            {
+                return;
+            }
+            MainView.StartButton.Enabled = true;
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -220,9 +223,9 @@ namespace Enigma2_stream_tester
                 SaveJson(ConfigurationItems);
                 //
                 pagePanel.Controls.Clear();
-                pagePanel.Controls.Add(_mainView);
-                _mainView.Dock = DockStyle.Fill;
-                _mainView.BringToFront();
+                pagePanel.Controls.Add(MainView);
+                MainView.Dock = DockStyle.Fill;
+                MainView.BringToFront();
             }
             catch (Exception exception)
             {

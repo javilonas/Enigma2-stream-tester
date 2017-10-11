@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Enigma2_stream_tester.UserView;
 
 namespace Enigma2_stream_tester.Utils
 {
@@ -38,7 +37,7 @@ namespace Enigma2_stream_tester.Utils
             }
         }
 
-        public void NewM3U(string newIp,string port,bool best, string resolution)
+        public void NewM3U(string newIp,string port,bool best, string resolution, string frames)
         {
             try
             {
@@ -72,14 +71,14 @@ namespace Enigma2_stream_tester.Utils
                     Directory.CreateDirectory(_currentDirM3U + "\\" + resolution);
                 }
                 Thread.Sleep(500);
-                File.WriteAllLines(_currentDirM3U + "\\" + resolution + "\\" + bestStreams + newIp + ".m3u", template);
+                File.WriteAllLines(_currentDirM3U + "\\" + resolution + "\\" + bestStreams + frames + "_" + newIp + ".m3u", template);
                 
                 //send to ftp
-                if (_form.FtpView.ftp_checkBox == null) return;
+                if (_form.FtpView == null) return;
                 if (_form.FtpView.ConnectionStatus && _form.FtpView.ftp_checkBox.Enabled && _form.FtpView.ChoosenFolder != string.Empty)
                 {
-                    _form.FtpView.Client.Upload(_form.FtpView.ChoosenFolder + "\\" + newIp + ".m3u",
-                        _currentDirM3U + "\\" + resolution + "\\" + bestStreams + newIp + ".m3u");
+                    _form.FtpView.Client.Upload(_form.FtpView.ChoosenFolder + "\\" + frames + "_" + newIp + ".m3u",
+                        _currentDirM3U + "\\" + resolution + "\\" + bestStreams + frames + "_" + newIp + ".m3u");
                 }
             }
             catch (Exception e)
@@ -88,7 +87,7 @@ namespace Enigma2_stream_tester.Utils
             }
         }
 
-        public Tuple<List<string>,List<string[]>> ScanDirectory()
+        public (List<string>,List<string[]>) ScanDirectory()
         {
             try
             {
@@ -117,14 +116,19 @@ namespace Enigma2_stream_tester.Utils
                     _form.AddToLog("Search end!");
                     _form.AddToLog("Loading content from m3u files. It may take few seconds!");
                     MessageBox.Show("Now we trying to load yours files! \n\nBe patient!",@"Info");
-                    fileList.AddRange(filePathesList.Select(n => File.ReadAllLines(n, Encoding.Default)));
+                    //fileList.AddRange(filePathesList.Select(n => File.ReadAllLines(n, Encoding.Default)));
+                    Parallel.ForEach(filePathesList, filepath =>
+                    {
+                        fileList.Add(File.ReadAllLines(filepath));
+                    });
+
                     if (fileList.Count == 0)
                     {
                         MessageBox.Show(@"No files!", @"Error!");
-                        return null;
+                        return (null,null);
                     }
                     MessageBox.Show("Loading Complete!\n\nLoaded: " + fileList.Count + " files",@"Info");
-                    return Tuple.Create(filePathesList,fileList);
+                    return (filePathesList,fileList);
                 }
 
                 if(result != DialogResult.Cancel)
@@ -137,7 +141,7 @@ namespace Enigma2_stream_tester.Utils
                     _form.Text = @"Enigma2 Tester     " + @"You choose : " + DirectoryPath;
                     var filePathesList = Directory.GetFiles(DirectoryPath, @"*.m3u").ToList();
                     Parallel.Invoke(() => fileList.AddRange(filePathesList.Select(n => File.ReadAllLines(n, Encoding.Default))));
-                    return Tuple.Create(filePathesList, fileList);
+                    return (filePathesList, fileList);
                 }
             }
             catch (Exception ec)
@@ -145,7 +149,7 @@ namespace Enigma2_stream_tester.Utils
                 MessageBox.Show(@"You have not selected a folder." + ec, @"Błąd");
                 _form.AddLogToFile(ec.ToString());
             }
-            return null;
+            return (null,null);
         }
 
         public string FirstLineHttp(string[] fileContent)

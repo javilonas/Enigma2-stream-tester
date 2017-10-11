@@ -39,16 +39,46 @@ namespace Enigma2_stream_tester.Utils
                     httpClient.CancelAsync();
                 }
                 
-                var infoTuple = Info(outputFile);
-                var frameCount = infoTuple.Item1;
-                var resolution = infoTuple.Item2;
+                var (frameCount,resolution,fileLength) = Info(outputFile);
+
+                if (fileLength > 1000 && frameCount == 0)
+                {
+                    _form.BeginInvoke((Action) delegate
+                    {
+                        var value = int.Parse(_form.MainView.noChannel_label.Text);
+                        value += 1;
+                        _form.MainView.noChannel_label.Text = value.ToString();
+                    });
+                }
+                if (fileLength < 1)
+                {
+                    _form.BeginInvoke((Action) delegate
+                    {
+                        var value = int.Parse(_form.MainView.notWorking_label.Text);
+                        value += 1;
+                        _form.MainView.notWorking_label.Text = value.ToString();
+                    });
+                }
                 if (frameCount > timeout / 1000 * 16) // Need to develop a way of estimating the quality of the source
                 {
-                    _operation.NewM3U(ip, port, true, resolution); //save as best m3u
+                    _form.BeginInvoke((Action) delegate
+                    {
+                        _operation.NewM3U(ip, port, true, resolution, frameCount.ToString()); //save as best m3u
+                        var value = int.Parse(_form.MainView.Best_label.Text);
+                        value += 1;
+                        _form.MainView.Best_label.Text = value.ToString();
+                    });
+                    return;
                 }
-                if (frameCount > 2)
+                if (frameCount <= 2) return;
                 {
-                    _operation.NewM3U(ip, port, false, resolution); //save as new m3u
+                    _form.BeginInvoke((Action) delegate
+                    {
+                        _operation.NewM3U(ip, port, false, resolution,frameCount.ToString()); //save as new m3u
+                        var value = int.Parse(_form.MainView.Working_label.Text);
+                        value += 1;
+                        _form.MainView.Working_label.Text = value.ToString();
+                    });
                 }
             }
             catch (Exception e)
@@ -57,14 +87,14 @@ namespace Enigma2_stream_tester.Utils
             }
         }
 
-        public Tuple<int, string> Info(string path) //path = mpeg file path
+        public (int, string, long) Info(string path) //path = mpeg file path
         {
             try
             {
                 var media = new MediaFile(path);
                 var f = new FileInfo(path);
                 var videoFile = media.Video;
-                if (videoFile.Count < 1) return Tuple.Create(0, string.Empty);
+                if (videoFile.Count < 1) return (0, string.Empty, 0);
                 var codecType = videoFile[0].InternetMediaType;
                 var videoHeight = videoFile[0].Height;
                 var videoWidth = videoFile[0].Width;
@@ -76,12 +106,12 @@ namespace Enigma2_stream_tester.Utils
                 _form.AddToLog("Resolution : " + videoWidth + "x" + videoHeight);
                 _form.AddToLog("File length : " + fileLength);
                 _form.AddToLog("Frames captured : " + frameCount);
-                return Tuple.Create(frameCount, videoHeight.ToString());
+                return (frameCount, videoHeight.ToString(), fileLength);
             }
             catch (Exception e)
             {
                 _form.AddLogToFile(e.ToString());
-                return Tuple.Create(0, string.Empty);
+                return (0, string.Empty,0);
             }
         }
     }
