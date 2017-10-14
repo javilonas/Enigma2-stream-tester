@@ -25,7 +25,15 @@ namespace Enigma2_stream_tester.Utils
             {
                 _operation = _form.Operation;
                 var timeout = _form.ConfigurationItems[0].timeout;
-                var outputDirectory = DirectoryPath + "\\temp\\"; //zrobic z konfigu
+                var outputDirectory = string.Empty;
+                if (!string.IsNullOrEmpty(DirectoryPath))
+                {
+                    outputDirectory = DirectoryPath + "\\temp\\"; //zrobic z konfigu
+                }
+                else
+                {
+                    return;
+                } 
                 var outputFile = outputDirectory + ip + ".mpeg";
                 if (!Directory.Exists(outputDirectory))
                 {

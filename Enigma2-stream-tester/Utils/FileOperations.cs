@@ -13,10 +13,15 @@ namespace Enigma2_stream_tester.Utils
 {
     public class FileOperations
     {
+        //public
         public string DirectoryPath;
+        public List<string> IpList = new List<string>();
+        public int FtpCounter = 1;
+        //private
+
         private readonly string _currentDirM3U = Directory.GetCurrentDirectory() + "\\m3u";
         private readonly Main _form;
-
+        
         public FileOperations(Main form)
         {
             _form = form;
@@ -75,10 +80,12 @@ namespace Enigma2_stream_tester.Utils
                 
                 //send to ftp
                 if (_form.FtpView == null) return;
-                if (_form.FtpView.ConnectionStatus && _form.FtpView.ftp_checkBox.Enabled && _form.FtpView.ChoosenFolder != string.Empty)
+                
+                if (_form.FtpView.ConnectionStatus && _form.FtpView.ftp_checkBox.Enabled && _form.FtpView.ChoosenFolder != string.Empty && best)
                 {
-                    _form.FtpView.Client.Upload(_form.FtpView.ChoosenFolder + "\\" + frames + "_" + newIp + ".m3u",
+                    _form.FtpView.Client.Upload(_form.FtpView.ChoosenFolder + "\\" + FtpCounter + ".m3u",
                         _currentDirM3U + "\\" + resolution + "\\" + bestStreams + frames + "_" + newIp + ".m3u");
+                    FtpCounter += 1;
                 }
             }
             catch (Exception e)
@@ -152,6 +159,31 @@ namespace Enigma2_stream_tester.Utils
             return (null,null);
         }
 
+        public List<string> ScanFile()
+        {
+            try
+            {
+                var dialog = new OpenFileDialog {InitialDirectory = "C:\\"};
+                var result = dialog.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    var fullPath = dialog.FileName;
+                    var fileName = dialog.SafeFileName;
+                    var path = fullPath.Replace(fileName, "");
+                    _form.Video.DirectoryPath = path;
+                    var ipFileAllLines = File.ReadAllLines(fullPath);
+                    _form.AddToLog(ipFileAllLines);
+                    return ipFileAllLines.ToList();
+                }
+                return null;
+            }
+            catch (Exception e)
+            {
+                _form.AddLogToFile(e.ToString());
+                return null;
+            }
+        }
+
         public string FirstLineHttp(string[] fileContent)
         {
             var lineWithIp = string.Empty;
@@ -195,6 +227,49 @@ namespace Enigma2_stream_tester.Utils
         public void OpenOutputDirectory()
         {
             Process.Start(_currentDirM3U);
+        }
+
+        public List<string> GetIpList(List<string[]> filesContentList) // files
+        {
+            var ListOfiP = new List<string>();
+            foreach (var currentFile in filesContentList)
+            {
+                var ip = FirstLineHttp(currentFile);
+                ListOfiP.Add(ip);
+            }
+            return ListOfiP;
+        }
+
+        private bool ValidateIPv4(string ipString)
+        {
+            try
+            {
+                if (String.IsNullOrWhiteSpace(ipString))
+                {
+                    return false;
+                }
+
+                string[] splitValues = ipString.Split('.');
+                if (splitValues.Length != 4)
+                {
+                    return false;
+                }
+
+                byte tempForParsing;
+
+                return splitValues.All(r => byte.TryParse(r, out tempForParsing));
+
+            }
+            catch (Exception e)
+            {
+                _form.AddLogToFile(e.ToString());
+                return false;
+            }
+        }
+
+        public bool CheckIPList(List<string> ipList)
+        {
+            return ipList.All(ValidateIPv4);
         }
     }
 }

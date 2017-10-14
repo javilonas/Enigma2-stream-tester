@@ -32,6 +32,7 @@ namespace Enigma2_stream_tester
             ConfigurationItems = LoadJson(); //load config
             Video = new VideoTest(this);
             MainView = new MainPage(this);
+            Operation = new FileOperations(this);
 
             //run tester page first
             pagePanel.Controls.Clear();
@@ -46,24 +47,42 @@ namespace Enigma2_stream_tester
             var worker = new Thread(Work) {IsBackground = true};
             worker.Start();
         }
-    
+
         public void Work()
         {
             ConfigurationItems = LoadJson(); // load new config before start tester
-            if (_filePathList.Count == 0 || _filesContentList.Count == 0 || ConfigurationItems == null) return;
-
+            var ipList = new List<string>();
+            if (_filesContentList != null)
+            {
+                if ((_filePathList.Count == 0 || _filesContentList.Count == 0 || ConfigurationItems == null) && Operation.IpList.Count == 0)
+                {
+                    return;
+                }
+                ipList.Clear();
+                ipList = Operation.GetIpList(_filesContentList); //from files
+            }
+            if (Operation.IpList!= null && Operation.IpList.Count > 0)
+            {
+                ipList.Clear();
+                ipList = Operation.IpList; // form txt file
+            }
+            if (Operation.CheckIPList(ipList) == false)
+            {
+                MessageBox.Show(@"Not all lines in file are IP's", @"Error");
+                return;
+            }
             //progressbar
             BeginInvoke((Action) delegate { ScanProgressBar.Minimum = 0; });
-            BeginInvoke((Action) delegate { ScanProgressBar.Maximum = _filePathList.Count; });
+            BeginInvoke((Action) delegate { ScanProgressBar.Maximum = ipList.Count; });
             var progressBarCounter = 0;
             //
-            
+
             //parallel restrict
             var parallelOptions = new ParallelOptions {MaxDegreeOfParallelism = ConfigurationItems[0].parallelOpt };
             //
-            Parallel.ForEach(_filesContentList, parallelOptions, currentFile =>
+            Parallel.ForEach(ipList, parallelOptions, ip =>
             {
-                var ip = Operation.FirstLineHttp(currentFile);
+                
                 if (ip == null) return;
                 Video.Check(ip, ConfigurationItems[0].scanPort, ConfigurationItems[0].defaultChannel);
                 var counter = progressBarCounter;
@@ -85,10 +104,11 @@ namespace Enigma2_stream_tester
                 ScanProgressBar.Value = 0;
                 progressValue_Label.Text =
                     (int) ((float) ScanProgressBar.Value / (float) ScanProgressBar.Maximum * 100) + @"%";
-                MainView.StartButton.Enabled = true;
                 Operation.OpenOutputDirectory();
             });
             Operation.RemoveTemp(Operation.DirectoryPath); //remove files and dir with *.mpeg
+            Operation.IpList.Clear();
+            Operation.FtpCounter = 0;
         }
 
         public class Item
@@ -178,7 +198,6 @@ namespace Enigma2_stream_tester
 
         private void LoadFilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Operation = new FileOperations(this);
             (_filePathList, _filesContentList) = Operation.ScanDirectory();
             if (_filePathList == null || _filesContentList == null)
             {
@@ -257,6 +276,12 @@ namespace Enigma2_stream_tester
             pagePanel.Controls.Add(FtpView);
             FtpView.Dock = DockStyle.Fill;
             FtpView.BringToFront();
+        }
+
+        public void LoadIPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Operation.IpList = Operation.ScanFile();
+            MainView.StartButton.Enabled = true;
         }
     }
 }

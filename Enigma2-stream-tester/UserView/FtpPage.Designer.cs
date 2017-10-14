@@ -39,6 +39,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +79,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.ftpDirectory_comboBox);
             this.groupBox1.Controls.Add(this.ftp_checkBox);
             this.groupBox1.Controls.Add(this.ftpLogin_Button);
@@ -106,7 +114,7 @@
             // ftp_checkBox
             // 
             this.ftp_checkBox.AutoSize = true;
-            this.ftp_checkBox.Location = new System.Drawing.Point(539, 27);
+            this.ftp_checkBox.Location = new System.Drawing.Point(506, 27);
             this.ftp_checkBox.Name = "ftp_checkBox";
             this.ftp_checkBox.Size = new System.Drawing.Size(124, 25);
             this.ftp_checkBox.TabIndex = 6;
@@ -164,6 +172,42 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(480, 61);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(164, 21);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Output filenames:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(480, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 21);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "1.m3u";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(480, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 21);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "2.m3u";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(480, 127);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(25, 21);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "...";
+            // 
             // FtpPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,5 +234,9 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ComboBox ftpDirectory_comboBox;
         public System.Windows.Forms.CheckBox ftp_checkBox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -43,6 +43,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressValue_Label = new System.Windows.Forms.Label();
             this.pagePanel = new System.Windows.Forms.Panel();
+            this.exportIPListFromTxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +70,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadFilesToolStripMenuItem,
+            this.exportIPListFromTxtToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -77,14 +79,14 @@
             // loadFilesToolStripMenuItem
             // 
             this.loadFilesToolStripMenuItem.Name = "loadFilesToolStripMenuItem";
-            this.loadFilesToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.loadFilesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.loadFilesToolStripMenuItem.Text = "Load files";
             this.loadFilesToolStripMenuItem.Click += new System.EventHandler(this.LoadFilesToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -170,6 +172,13 @@
             this.pagePanel.Size = new System.Drawing.Size(686, 215);
             this.pagePanel.TabIndex = 6;
             // 
+            // exportIPListFromTxtToolStripMenuItem
+            // 
+            this.exportIPListFromTxtToolStripMenuItem.Name = "exportIPListFromTxtToolStripMenuItem";
+            this.exportIPListFromTxtToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.exportIPListFromTxtToolStripMenuItem.Text = "Import IP list from txt file";
+            this.exportIPListFromTxtToolStripMenuItem.Click += new System.EventHandler(this.LoadIPToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +221,7 @@
         private System.Windows.Forms.ToolStripMenuItem testerToolStripMenuItem;
         private System.Windows.Forms.Label progressValue_Label;
         private System.Windows.Forms.Panel pagePanel;
+        private System.Windows.Forms.ToolStripMenuItem exportIPListFromTxtToolStripMenuItem;
     }
 }
 
